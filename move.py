@@ -7,7 +7,6 @@ dict_direc = {
             "d": (1, 0),
             "w": (0, -1)
             }
-defeault_direc = [-1, 0]
 
 def get_direc():
     if msvcrt.kbhit():
@@ -31,7 +30,7 @@ def clock_frame(FPS):
         delta = end_frame - start_frame
         if delta < time_frame:
             time.sleep(1/FPS - delta)
-
+# thử nghiệm
 def main():
     direc = (0, 0)
     pos = (0, 0)
